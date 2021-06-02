@@ -21,7 +21,7 @@ header {
 }
 
 .header__logo {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: var(--main-color);
 }
@@ -80,9 +80,95 @@ header {
 /*  */
 
 aside {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
   background-color: var(--main-color);
   border-radius: 0px 80px 0px 0px;
   float: left;
   width: 200px;
-  height: 100vh;
+  height: 600px;
+}
+
+.aside__uploadBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 20px 30px 20px;
+  width: 68%;
+  height: 32px;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--main-color);
+  background-color: white;
+  border-radius: 80px;
+  border: solid white 1px;
+  transition: 0.2s;
+}
+.aside__uploadBtn:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+
+ul.aside__menu {
+  list-style: none;
+  margin: 0px;
+  padding: 0px 10px;
+}
+.aside__menu li {
+  display: flex;
+}
+.aside__menu i {
+  width: 18px;
+  height: 18px;
+  font-size: 100%;
+  color: white;
+  padding: 10px;
+}
+.aside__menu a {
+  font-size: 12px;
+  color: white;
+  align-self: center;
+  padding: 4px;
+}
+
+.main {
+  position: relative;
+  left: 200px;
+  width: calc(100% - 280px);
+  padding: 40px;
+  color: var(--main-color);
+}
+.main__title {
+  display: flex;
+  justify-content: space-between;
+}
+.main span {
+  font-weight: bold;
+  font-size: 18px;
+}
+.main i {
+  width: 24px;
+  height: 24px;
+  background-color: var(--main-color);
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 4px;
+  padding: 2px;
+}
+.main__title__icons i {
+  background-color: var(--back-gray);
+  color: var(--bold-gray);
+}
+
+.divider {
+  margin-top: 6px;
+  height: 3px;
+  width: 100%;
+  border-width: 0;
+  background-color: var(--back-gray);
 }
