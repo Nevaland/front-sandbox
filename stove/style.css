@@ -1,0 +1,120 @@
+:root {
+  --background-color: rgb(17, 17, 17);
+  --text-color: rgb(90, 90, 90);
+  --bar-color: rgb(50, 50, 50);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.topbar__icons i {
+  padding-left: 10px;
+}
+.topbar i:hover {
+  color: rgb(197, 197, 197);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+  border-width: 1px 0px 1px 0px;
+  border-style: solid;
+  border-color: var(--bar-color);
+}
+
+.nav_left {
+  display: flex;
+  align-items: center;
+}
+.nav_left__logo {
+  margin: 10px;
+  color: rgb(255, 80, 0);
+  font-weight: bold;
+  font-size: 22px;
+}
+.nav_left__logo:hover {
+  color: rgb(201, 64, 0);
+}
+
+.nav_left__category {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0px 40px;
+}
+.nav_left__category li {
+  margin: 14px;
+}
+.nav_left__category a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.nav_left__category a:hover {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.nav_left__category li:first-child a {
+  color: white;
+  font-weight: bold;
+}
+
+.nav_user {
+  display: flex;
+  align-items: center;
+}
+.nav_user__photo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 42px;
+  height: 42px;
+  background-color: rgb(43, 199, 165);
+  border-radius: 80px;
+}
+.nav_user__photo-incircle {
+  display: block;
+  width: 34px;
+  height: 34px;
+  background-color: white;
+  border-radius: 80px;
+  bottom: 0px;
+}
+
+.nav_user > * {
+  margin: 0px 10px;
+}
+.nav_user > i {
+  color: rgb(197, 197, 197);
+  padding: 10px;
+}
+.nav_user > i:hover {
+  color: white;
+}
+.nav_user a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+  font-size: 14px;
+  margin: 0px;
+}
+.nav_user a:hover {
+  text-decoration-line: underline;
+}
+.nav_user a i {
+  padding: 0px 0px 0px 15px;
+  font-size: 10px;
+}
